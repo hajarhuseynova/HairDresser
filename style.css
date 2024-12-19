@@ -2,6 +2,44 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+.toastContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+}
+.toastContainer .success {
+  background-color: green;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.toastContainer .alert {
+  background-color: red;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.toastContainer .confirm_image {
+  width: 20px;
+  margin-right: 10px;
+}
+.toastContainer .alert_image {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,16 +61,19 @@ body {
   background-color: #fff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+
 .container_register .top {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .container_register .top a .logo {
   width: 100px;
   height: 100px;
   margin-right: 25px;
 }
+
 .container_register .top .word h4 {
   letter-spacing: 5px;
   line-height: 1;
@@ -40,17 +81,20 @@ body {
   font-weight: bold;
   text-align: center;
 }
+
 .container_register .form {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .container_register .form .input_div {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
+
 .container_register .form .input_div label {
   margin-bottom: 5px;
   font-size: 18px;
@@ -58,6 +102,7 @@ body {
   line-height: 1;
   margin-left: 3px;
 }
+
 .container_register .form .input_div input {
   width: 270px;
   letter-spacing: 1.5px;
@@ -67,6 +112,7 @@ body {
   border-radius: 5px;
   outline: none;
 }
+
 .container_register .form .input_div select {
   width: 270px;
   padding: 5px 6px;
@@ -77,6 +123,7 @@ body {
   cursor: pointer;
   transition: border-color 0.3s;
 }
+
 .container_register .form button {
   width: 270px;
   height: 30px;
@@ -91,6 +138,7 @@ body {
   font-size: 17px;
   transition: 0.5s;
 }
+
 .container_register .form button:hover {
   transition: 0.5s;
   background-color: #fff;
